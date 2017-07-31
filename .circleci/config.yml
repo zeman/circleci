@@ -18,3 +18,5 @@ jobs:
 
     steps:
       - checkout
+      - deploy:
+          command: curl "https://api.speedcurve.com/v1/deploys" -u fz0g1bnc65j341v96wzbojc5vhhvwq:x --request POST --data site_id=37641 --data note=circleci
